@@ -1,0 +1,12 @@
+.changeFormButtons {
+    text-align: center;
+}
+
+.formContainer {
+    width: 30%;
+    margin: 5% auto;
+}
+
+.signUpFormContainer {
+    display: none;
+}
