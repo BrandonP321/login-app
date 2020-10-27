@@ -35,6 +35,9 @@
             <button type="submit" class="btn btn-primary" aria-describedat="loginHelp">Login</button>
             <small id="loginHelp" class="form-text text-muted"></small>
         </form>
+
+        <p class='changeToSignUpFormText formToggleText'>Don't have an account yet? <a class='formToggleBtn changeToSignUpFormBtn'
+                href='#' data-show='signUpFormContainer' data-hide='loginFormContainer'>Sign up now!</a></p>
     </div>
 
     <!-- sign up form -->
@@ -60,13 +63,18 @@
             <button type="submit" class="btn btn-primary">Create Account</button>
             <small id="signUpHelp" class="form-text text-muted"></small>
         </form>
+
+        <p class='changeToLoginFormText formToggleText'>Already have an account? <a class='formToggleBtn changeToLoginFormBtn' href='#'
+                data-show='loginFormContainer' data-hide='signUpFormContainer'>Login</a></p>
     </div>
 
     <!-- buttons to change between login/sign up forms -->
-    <div class='changeFormButtons'>
-        <p>Don't have an account yet? <a class='changeToSignUpForm' href='#'>Sign up now!</a></p>
-        <p>Already have an account? <a class='changeToLoginForm' href='#'>Login</a></p>
-    </div>
+    <!-- <div class='changeFormButtons'>
+        <p class='changeToSignUpFormText'>Don't have an account yet? <a class='changeToSignUpFormBtn' href='#'
+                data-toggle='changeToLoginFormText'>Sign up now!</a></p>
+        <p class='changeToLoginFormText'>Already have an account? <a class='changeToLoginFormBtn' href='#'
+                data-toggle='loginFormContainer'>Login</a></p>
+    </div> -->
 
     <!-- jQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

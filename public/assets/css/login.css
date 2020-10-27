@@ -1,10 +1,19 @@
+form {
+    margin-bottom: 15%;
+}
+
 .changeFormButtons {
     text-align: center;
 }
 
 .formContainer {
     width: 30%;
-    margin: 5% auto;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.formToggleText {
+    text-align: center;
 }
 
 .signUpFormContainer {

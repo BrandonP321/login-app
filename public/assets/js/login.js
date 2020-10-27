@@ -54,3 +54,15 @@ $('.signUpForm').on('submit', function (event) {
         alert('New account created')
     })
 })
+
+// when user clicks button to change to login or sign up form
+$('.formToggleBtn').on('click', function(event) {
+    // grab forms to hide and show
+    const formToShow = $(this).attr('data-show')
+    const formToHide = $(this).attr('data-hide')
+
+    // hide/show forms
+    $(`.${formToShow}`).css('display', 'block')
+    $(`.${formToHide}`).css('display', 'none')
+
+})
