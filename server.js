@@ -29,10 +29,11 @@ app.set('view engine', 'handlebars');
 
 
 // html routes
-require('./controllers/html/')(app);
+require('./controllers/html/login-controller')(app);
+require('./controllers/html/profile-controller')(app);
 
 // api routes
-require('./controllers/api/')(app);
+require('./controllers/api/user-controller')(app);
 
 
 db.sequelize.sync({ force: false }).then(function() {
