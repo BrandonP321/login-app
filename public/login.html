@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- jQuery UI stylesheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- universal stylesheet -->
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <!-- login stylesheet -->
+    <link rel='stylesheet' href='assets/css/login.css'>
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- login form -->
+    <div class='loginFormContainer formContainer'>
+        <form class='loginForm'>
+            <div class='form-group'>
+                <label for='loginEmailInput'>Email</label>
+                <input id='loginEmailInput' class='form-control' type='text' name='email' placeholder="Enter your email"
+                    aria-describedby="emailSmall">
+                <small id='emailSmall' class='form-text text-muted'></small>
+            </div>
+            <div class="form-group">
+                <label for="loginPasswordInput">Password</label>
+                <input type="password" class="form-control" id="loginPasswordInput"
+                    aria-describedby="loginPasswordHelp" placeholder="Enter password">
+                <small id="loginPasswordHelp" class="form-text text-muted"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <!-- sign up form -->
+    <div class='signUpFormContainer formContainer'>
+        <form class='signUpForm'>
+            <div class='form-group'>
+                <label for='signUpEmailInput'>Email</label>
+                <input id='signUpEmailInput' class='form-control' type='text' name='email' placeholder="Enter your email"
+                    aria-describedby="emailSmall" required>
+                <small id='emailSmall' class='form-text text-muted'>We never share your email with anyone</small>
+            </div>
+            <div class='form-group'>
+                <label for='signUpNameInput'>Name</label>
+                <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="signUpPasswordInput" required>Enter a secure Password</label>
+                <input type="password" class="form-control" id="signUpPasswordInput"
+                    aria-describedby="signUpPasswordHelp" placeholder="Enter password">
+                <small id="signUpPasswordHelp" class="form-text text-muted"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+    </div>
+
+    <!-- buttons to change between login/sign up forms -->
+    <div class='changeFormButtons'>
+        <p>Don't have an account yet? <a class='changeToSignUpForm' href='#'>Sign up now!</a></p>
+        <p>Already have an account? <a class='changeToLoginForm' href='#'>Login</a></p>
+    </div>
+
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- jQuery UI script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- socket io script -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- local script -->
+    <script src='assets/js/speed-test.js'></script>
+</body>
+
+</html>
