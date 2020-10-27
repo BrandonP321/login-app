@@ -33,6 +33,30 @@ module.exports = function(router) {
 
     // user wants to sign up
     router.post('/signup', function(req, res) {
-        
+        // check if user with same email already exists
+        db.User.findOne({
+            where: {email: req.body.email}
+        }).then(dbUser => {
+            // if email taken
+            if (dbUser) {
+                // status 403
+                return res.status(403).send("Email taken").end();
+            }
+            // otherwise create a new user
+            db.User.create({
+                email: req.body.email,
+                password: req.body.password,
+                name: req.body.name
+            }).then(newUser => {
+                // create session with new user info
+                req.session.user = {
+                    id: newUser.id,
+                    email: newUser.email,
+                    name: newUser.email
+                }
+                // status 200
+                res.status(200).send("User created").end();
+            })
+        })
     });
 };
