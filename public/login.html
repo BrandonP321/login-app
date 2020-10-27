@@ -28,11 +28,12 @@
             </div>
             <div class="form-group">
                 <label for="loginPasswordInput">Password</label>
-                <input type="password" class="form-control" id="loginPasswordInput"
-                    aria-describedby="loginPasswordHelp" placeholder="Enter password">
+                <input type="password" class="form-control" id="loginPasswordInput" aria-describedby="loginPasswordHelp"
+                    placeholder="Enter password">
                 <small id="loginPasswordHelp" class="form-text text-muted"></small>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary" aria-describedat="loginHelp">Login</button>
+            <small id="loginHelp" class="form-text text-muted"></small>
         </form>
     </div>
 
@@ -41,13 +42,14 @@
         <form class='signUpForm'>
             <div class='form-group'>
                 <label for='signUpEmailInput'>Email</label>
-                <input id='signUpEmailInput' class='form-control' type='text' name='email' placeholder="Enter your email"
-                    aria-describedby="emailSmall" required>
+                <input id='signUpEmailInput' class='form-control' type='text' name='email'
+                    placeholder="Enter your email" aria-describedby="emailSmall" required>
                 <small id='emailSmall' class='form-text text-muted'>We never share your email with anyone</small>
             </div>
             <div class='form-group'>
                 <label for='signUpNameInput'>Name</label>
-                <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name" required>
+                <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name"
+                    required>
             </div>
             <div class="form-group">
                 <label for="signUpPasswordInput" required>Enter a secure Password</label>
@@ -76,10 +78,8 @@
         crossorigin="anonymous"></script>
     <!-- jQuery UI script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- socket io script -->
-    <script src="/socket.io/socket.io.js"></script>
     <!-- local script -->
-    <script src='assets/js/speed-test.js'></script>
+    <script src='assets/js/login.js'></script>
 </body>
 
 </html>
