@@ -7,6 +7,9 @@
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font awesome stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
     <!-- jQuery UI stylesheet -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- universal stylesheet -->
@@ -40,8 +43,9 @@
         </form>
 
         <!-- button to toggle which form is displayed -->
-        <p class='changeToSignUpFormText formToggleText'>Don't have an account yet? <a class='formToggleBtn changeToSignUpFormBtn'
-                href='#' data-show='signUpFormContainer' data-hide='loginFormContainer'>Sign up now!</a></p>
+        <p class='changeToSignUpFormText formToggleText'>Don't have an account yet? <a
+                class='formToggleBtn changeToSignUpFormBtn' href='#' data-show='signUpFormContainer'
+                data-hide='loginFormContainer'>Sign up now!</a></p>
     </div>
 
     <!-- sign up form -->
@@ -51,15 +55,15 @@
 
         <form class='signUpForm'>
             <div class='form-group'>
+                <label for='signUpNameInput'>Name</label>
+                <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name"
+                    required>
+            </div>
+            <div class='form-group'>
                 <label for='signUpEmailInput'>Email</label>
                 <input id='signUpEmailInput' class='form-control' type='text' name='email'
                     placeholder="Enter your email" aria-describedby="emailSmall" required>
                 <small id='emailSmall' class='form-text text-muted'>We never share your email with anyone</small>
-            </div>
-            <div class='form-group'>
-                <label for='signUpNameInput'>Name</label>
-                <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name"
-                    required>
             </div>
             <div class="form-group">
                 <label for="signUpPasswordInput" required>Enter a secure Password</label>
@@ -71,9 +75,19 @@
             <small id="signUpHelp" class="form-text text-muted"></small>
         </form>
 
+        <!-- password requirements display -->
+        <div class='passwordRequirementsContainer'>
+            <p>At least 1 lower case character <span id='lowerReq' class='fas fa-times'></span></p>
+            <p>At least 1 upper case character <span id='upperReq' class='fas fa-times'></span></p>
+            <p>At least 1 number <span id='numberReq' class='fas fa-times'></span></p>
+            <p>At least 1 special character (!@#$%^&*) <span id='specialReq' class='fas fa-times'></span></p>
+            <p>8-15 characters long <span id='lengthReq' class='fas fa-times'></span></p>
+        </div>
+
         <!-- button to toggle which form is displayed -->
-        <p class='changeToLoginFormText formToggleText'>Already have an account? <a class='formToggleBtn changeToLoginFormBtn' href='#'
-                data-show='loginFormContainer' data-hide='signUpFormContainer'>Login</a></p>
+        <p class='changeToLoginFormText formToggleText'>Already have an account? <a
+                class='formToggleBtn changeToLoginFormBtn' href='#' data-show='loginFormContainer'
+                data-hide='signUpFormContainer'>Login</a></p>
     </div>
 
     <!-- jQuery script -->
