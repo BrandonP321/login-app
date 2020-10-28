@@ -95,6 +95,8 @@ $('#signUpPasswordInput').on('input', function (event) {
     if (isBadChar) {
         // store bad char and tell user it can't be used
         const badChar = password[password.length - 1]
+        // tell user that the entered char is not valid
+        $('#signUpPasswordHelp').text(`'${badChar}' not valid`)
         // remove recent char from input value
         password = password.slice(0, password.length - 1)
         // reset input value without most recent char and return to break function
