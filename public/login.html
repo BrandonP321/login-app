@@ -29,13 +29,13 @@
             <div class='form-group'>
                 <label for='loginEmailInput'>Email</label>
                 <input id='loginEmailInput' class='form-control' type='text' name='email' placeholder="Enter your email"
-                    aria-describedby="emailSmall">
+                    aria-describedby="emailSmall" autocomplete="email">
                 <small id='emailSmall' class='form-text text-muted'></small>
             </div>
             <div class="form-group">
                 <label for="loginPasswordInput">Password</label>
                 <input type="password" class="form-control" id="loginPasswordInput" aria-describedby="loginPasswordHelp"
-                    placeholder="Enter password">
+                    placeholder="Enter password" autocomplete="current-password">
                 <small id="loginPasswordHelp" class="form-text text-muted"></small>
             </div>
             <button type="submit" class="btn btn-primary" aria-describedat="loginHelp">Login</button>
@@ -57,18 +57,18 @@
             <div class='form-group'>
                 <label for='signUpNameInput'>Name</label>
                 <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name"
-                    required>
+                    autocomplete="name" required>
             </div>
             <div class='form-group'>
                 <label for='signUpEmailInput'>Email</label>
                 <input id='signUpEmailInput' class='form-control' type='text' name='email'
-                    placeholder="Enter your email" aria-describedby="emailSmall" required>
+                    placeholder="Enter your email" aria-describedby="emailSmall" autocomplete="email" required>
                 <small id='emailSmall' class='form-text text-muted'>We never share your email with anyone</small>
             </div>
             <div class="form-group">
                 <label for="signUpPasswordInput" required>Enter a secure Password</label>
                 <input type="password" class="form-control" id="signUpPasswordInput"
-                    aria-describedby="signUpPasswordHelp" placeholder="Enter password">
+                    aria-describedby="signUpPasswordHelp" placeholder="Enter password" autocomplete="new-password">
                 <small id="signUpPasswordHelp" class="form-text text-muted"></small>
             </div>
             <button type="submit" class="btn btn-primary">Create Account</button>

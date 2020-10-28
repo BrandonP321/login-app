@@ -156,3 +156,8 @@ $('#signUpPasswordInput').on('input', function (event) {
         $('#lengthReq').attr('class', 'fas fa-times')
     }
 })
+
+// when user focuses on password input on sign up form
+$('#signUpPasswordInput').on('focus', function(event) {
+    $('.passwordRequirementsContainer').animate({opacity: 1}, 500)
+})

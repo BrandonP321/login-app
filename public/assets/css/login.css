@@ -30,6 +30,17 @@ form {
     text-align: center;
 }
 
+.passwordRequirementsContainer {
+    position: absolute;
+    background-color: rgb(232, 240, 254);
+    border-radius: 10px;
+    padding: 3%;
+    top: 18%;
+    right: -80%;
+    opacity: 0;
+}
+
 .signUpFormContainer {
     display: none;
+    position: relative;
 }
