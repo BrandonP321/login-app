@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 15%;
+}
+
+.changeFormButtons {
+    text-align: center;
+}
+
+/* make all check marks green */
+.fa-check {
+    color: rgb(39, 173, 39);
+}
+
+/* make all times symbols red */
+.fa-times {
+    color: red
+}
+
+.formContainer {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.formToggleText {
+    text-align: center;
+}
+
+.signUpFormContainer {
+    display: none;
+}

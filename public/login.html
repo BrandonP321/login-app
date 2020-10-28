@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font awesome stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    <!-- jQuery UI stylesheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- universal stylesheet -->
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <!-- login stylesheet -->
+    <link rel='stylesheet' href='assets/css/login.css'>
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- login form -->
+    <div class='loginFormContainer formContainer'>
+
+        <h2>Login</h2>
+
+        <form class='loginForm'>
+            <div class='form-group'>
+                <label for='loginEmailInput'>Email</label>
+                <input id='loginEmailInput' class='form-control' type='text' name='email' placeholder="Enter your email"
+                    aria-describedby="emailSmall">
+                <small id='emailSmall' class='form-text text-muted'></small>
+            </div>
+            <div class="form-group">
+                <label for="loginPasswordInput">Password</label>
+                <input type="password" class="form-control" id="loginPasswordInput" aria-describedby="loginPasswordHelp"
+                    placeholder="Enter password">
+                <small id="loginPasswordHelp" class="form-text text-muted"></small>
+            </div>
+            <button type="submit" class="btn btn-primary" aria-describedat="loginHelp">Login</button>
+            <small id="loginHelp" class="form-text text-muted"></small>
+        </form>
+
+        <!-- button to toggle which form is displayed -->
+        <p class='changeToSignUpFormText formToggleText'>Don't have an account yet? <a
+                class='formToggleBtn changeToSignUpFormBtn' href='#' data-show='signUpFormContainer'
+                data-hide='loginFormContainer'>Sign up now!</a></p>
+    </div>
+
+    <!-- sign up form -->
+    <div class='signUpFormContainer formContainer'>
+
+        <h2>Create Account</h2>
+
+        <form class='signUpForm'>
+            <div class='form-group'>
+                <label for='signUpNameInput'>Name</label>
+                <input id='signUpNameInput' class='form-control' type='text' name='name' placeholder="Enter your name"
+                    required>
+            </div>
+            <div class='form-group'>
+                <label for='signUpEmailInput'>Email</label>
+                <input id='signUpEmailInput' class='form-control' type='text' name='email'
+                    placeholder="Enter your email" aria-describedby="emailSmall" required>
+                <small id='emailSmall' class='form-text text-muted'>We never share your email with anyone</small>
+            </div>
+            <div class="form-group">
+                <label for="signUpPasswordInput" required>Enter a secure Password</label>
+                <input type="password" class="form-control" id="signUpPasswordInput"
+                    aria-describedby="signUpPasswordHelp" placeholder="Enter password">
+                <small id="signUpPasswordHelp" class="form-text text-muted"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <small id="signUpHelp" class="form-text text-muted"></small>
+        </form>
+
+        <!-- password requirements display -->
+        <div class='passwordRequirementsContainer'>
+            <p>At least 1 lower case character <span id='lowerReq' class='fas fa-times'></span></p>
+            <p>At least 1 upper case character <span id='upperReq' class='fas fa-times'></span></p>
+            <p>At least 1 number <span id='numberReq' class='fas fa-times'></span></p>
+            <p>At least 1 special character (!@#$%^&*) <span id='specialReq' class='fas fa-times'></span></p>
+            <p>8-15 characters long <span id='lengthReq' class='fas fa-times'></span></p>
+        </div>
+
+        <!-- button to toggle which form is displayed -->
+        <p class='changeToLoginFormText formToggleText'>Already have an account? <a
+                class='formToggleBtn changeToLoginFormBtn' href='#' data-show='loginFormContainer'
+                data-hide='signUpFormContainer'>Login</a></p>
+    </div>
+
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- jQuery UI script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- local script -->
+    <script src='assets/js/login.js'></script>
+</body>
+
+</html>
