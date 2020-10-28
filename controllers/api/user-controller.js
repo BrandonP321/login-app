@@ -21,7 +21,7 @@ module.exports = function(router) {
                 req.session.user = {
                     id: dbUser.id,
                     name: dbUser.name,
-                    email: dbUser.name
+                    email: dbUser.email
                 }
                 // status 200
                 return res.status(200).end();
@@ -54,7 +54,7 @@ module.exports = function(router) {
                 req.session.user = {
                     id: newUser.id,
                     email: newUser.email,
-                    name: newUser.email
+                    name: newUser.name
                 }
                 // status 200
                 res.status(200).send("User created").end();

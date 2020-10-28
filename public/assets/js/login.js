@@ -29,7 +29,8 @@ $('.loginForm').on('submit', function (event) {
             }
         }
     }).done(response => {
-        alert('logged in')
+        // if user enters valid credentials, redirect to profile page
+        window.location.href='/profile'
     })
 })
 
@@ -69,7 +70,8 @@ $('.signUpForm').on('submit', function (event) {
             }
         }
     }).done(response => {
-        alert('New account created')
+        // user is created in db, redirect to user's profile page
+        window.location.href = '/profile'
     })
 })
 
